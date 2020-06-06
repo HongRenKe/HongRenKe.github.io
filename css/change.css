@@ -1,0 +1,81 @@
+.coffeereport{
+    background-image: url("../images/coffeereport.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(498px*4/3);
+
+}
+.DNAinterpretor{
+    background-image: url("../images/DNA.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 480px;
+}
+.comingsoon{
+    background-image: url("../images/comingsoon.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 480px;
+}
+/*model修改*/
+.modal-dialogc{
+    max-width: 700px;
+    margin: 1.75rem auto;
+}
+.imgimgsize{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 498px;
+}
+/*大小修改*/
+.block-20c01{
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    display: block;
+    background-size: contain;
+}
+
+/*圖片左右切換*/
+#contentimg {
+    width: 698px;
+    height: unset; 
+    margin: unset;          
+    position: relative;
+}
+#contentimg a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 80px;
+    font-weight: 700;
+    filter: alpha(opacity: 60);
+    opacity: 0.6;
+    position: absolute;
+    top: 200px;
+    left: -10px;
+}
+#previmg a:hover {
+    color: pink;
+}
+#nextimg a:hover {
+    color: pink;
+}
+#previmg {left: -290px;}
+#nextimg {
+    right: -290px;
+    width: 37.45px;
+    margin-left: 480px;}
+#txtimg,#spanimg {
+    width: 498px;
+    position: absolute;         
+    left: 0;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    color: #fff;            
+    background-color: #000;
+    opacity: 0.5;
+}
+#txtimg {bottom: 0;margin: 0;}
