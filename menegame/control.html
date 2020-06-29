@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #box{
+            width: 400px;
+            height: 400px;
+            background: burlywood;
+            margin: auto;
+            position: relative;
+            overflow: hidden;
+        }
+        #fj{
+            width: 50px;
+            height: 50px;
+            background: red;
+            position: absolute;
+            top: 300px;
+            left: 150px;
+        }									
+    </style>
+
+
+</head>
+<body>
+    <div id="box">
+        <div id="fj">
+            小飞机
+        </div>
+    </div>						
+    <script>
+		var fj=document.getElementById("fj");
+	    document.onkeydown=function(e){ //键盘按下事件绑定
+	 	var e=window.event||e;
+		 	switch(e.keyCode){
+		 		case 37: //左
+		 		fj.style.left=Math.max(0,fj.offsetLeft-5)+"px";
+		 		break; 
+		 		case 38: //上
+		 		fj.style.top=Math.max(0,fj.offsetTop-5)+"px";
+		 		break;
+		 		case 39:  //右
+		 		fj.style.left=Math.min(350,fj.offsetLeft+5)+"px";
+		 		break;	
+		 		case 40:  //下
+		 		fj.style.top=Math.min(350,fj.offsetTop+5)+"px";
+		 		break;		 			
+		 	}
+	    }
+	</script>
+
+————————————————
+版权声明：本文为CSDN博主「on my-own」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/qq_39132756/java/article/details/82953324
+</body>
+</html>
+
+
+
