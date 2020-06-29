@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>debug_game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="./css/mainchange.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm bg-dark  fixed-top">
+   <!-- Toggler/collapsibe Button -->
+   <button class="navbar-toggler" type="button " data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon">
+      <svg class="bi bi-chevron-double-down" width="1em" height="1em" viewBox="0 0 16 16" fill="bisque" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+      <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+    </svg></span>
+  </button>
+  
+    <!-- Brand -->
+    <div class="menelog">
+    <a class="navbar-brand colbisq"  href="index.html">Mene Game</a>
+    </div>
+   
+  </nav>
+
+<div  class="centerback">
+<section>
+
+    <div class="gameview" id="gview">
+      
+        <div class="loading" id="loading">
+
+        <div class="progress" id="progress">0%</div>
+
+        </div>
+
+        
+   
+
+
+        
+    </div>   
+    <div class="modal fade" id="collect" role="dialog" style="margin-top: 20%;">
+      <div class="modal-dialog">
+      
+        <!-- Modal content-->
+
+        <div class="modal-content">
+        <div class="modal-header">
+          <p class="abtitle" id="collecttitle">收藏(0/0)</p>
+          <h4 class="modal-title"></h4>
+        </div>
+        <div id="cbox">
+        <div class="cpicture"id="cpicture"></div>
+         <div class="ctitle"id="ctitle">&lt;????&gt;</div>
+         <div class="ccontain"id="ccontain">????</div>
+         <p></p>
+        </div>
+        <div class="modal-footer">
+          <button id="cprev">上一個</button>
+          <button id="cnext">下一個</button>
+          <button type="button" class="btn btn-default menubtn" onclick="buttona()" data-dismiss="modal" style="margin-top: unset;">Close</button>
+        </div>
+        </div>
+        
+      </div>
+      </div>  
+   
+ 
+    <div class="modal fade" id="about" role="dialog" style="margin-top: 20%;">
+      <div class="modal-dialog">
+      
+        <!-- Modal content-->
+
+        <div class="modal-content">
+        <div class="modal-header">
+          <p class="abtitle">關於</p>
+          <h4 class="modal-title"></h4>
+        </div>
+       
+          <p>此遊戲為前端程式期末專案</p>
+          <p>作者：柯閎仁</p>
+          <p>Version 1.0.0</p>
+        
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default menubtn" onclick="buttona()" data-dismiss="modal" style="margin-top: unset;">Close</button>
+        </div>
+        </div>
+        
+      </div>
+      </div>
+    
+</section>
+
+<section >
+<div class="hint">
+</div>
+</section>
+<section >
+  <div class="blank">
+  <button class="testbtn" id="cmbtn">clear menu</button> 
+  <button class="testbtn" id="bmbtn">build menu</button> 
+  <button class="testbtn" id="chbtn">clear hole</button>
+  <button class="testbtn" id="bhbtn">build hole</button>
+  <button class="testbtn" id="mcsbtn">open mole cricket sound</button>
+  <button class="testbtn" id="mcscbtn">remove mole cricket sound</button>
+  <button class="testbtn" id="mcscabtn">remove mole all cricket sound</button>
+  <button class="testbtn" id="tpbtn">time=120</button>
+  <button class="testbtn" id="tmbtn">time=12</button>
+  <button class="testbtn" id="bmcbtn">mole cricket catch</button>
+  <button class="testbtn" id="bgmbtn">gm catch</button>
+  </div>
+  </section>
+  <section >
+    <div class="blank">
+    </div>
+    </section>
+</div>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="./js/mainchange.js">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    
+    
+</body>
+</html>
