@@ -75,7 +75,8 @@ var bugcheckf=()=>{
     }
 }
    
-$(document).on('click','#cnext',() =>{  
+$(document).on('click','#cnext',() =>{ 
+    buttona(); 
         if(page==bugtype){
             page=1;   
         }
@@ -86,7 +87,8 @@ $(document).on('click','#cnext',() =>{
     bugcheckf(); 
     
     })
-$(document).on('click','#cprev',() =>{  
+$(document).on('click','#cprev',() =>{
+    buttona();  
     if(page==1){
         page=bugtype;   
     }
@@ -772,6 +774,21 @@ $('#bmcbtn').click(() =>{
 $('#bgmbtn').click(() =>{
     gmc=1;
     bugcheckf();
+ }
+ )
+ $('#jumplbtn').click(() =>{
+    if($('#gmain').length!=0){
+        $('#mcsound').remove();
+        for(i=0;i<bugnum;i++){
+            $('#mcsound'+i).remove();
+        }
+        nextlevel();
+    } 
+    else{
+        alert("遊戲開始後才有效" ); 
+    }  
+
+    
  }
  )
 
